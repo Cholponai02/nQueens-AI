@@ -2,7 +2,7 @@ import csv
 import time
 
 from astar.astar import AStarSolver
-from astar.heuristics import conflicts_heuristic
+from astar.heuristics import nqueens_heuristic
 from csp.nqueens_csp import solve_nqueens_csp
 
 
@@ -21,7 +21,7 @@ def run_experiments(n_values, output_file="results.csv"):
 
             # ---------- A* ----------
             print("Running A*...")
-            astar = AStarSolver(n, conflicts_heuristic)
+            astar = AStarSolver(n, nqueens_heuristic)
 
             start = time.time()
             solution, nodes_expanded = astar.solve()
@@ -51,5 +51,5 @@ def run_experiments(n_values, output_file="results.csv"):
 
 
 if __name__ == "__main__":
-    n_values = [4, 6, 8, 10, 12, 14]
+    n_values = [4, 6, 8, 10, 12, 14, 16]
     run_experiments(n_values)

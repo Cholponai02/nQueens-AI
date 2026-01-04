@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="121e7024-e147-49a1-8a63-3b1e80f1a957" name="Changes" comment="added and tested main logic">
+    <list default="true" id="121e7024-e147-49a1-8a63-3b1e80f1a957" name="Changes" comment="improved A*">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/astar/astar.py" beforeDir="false" afterPath="$PROJECT_DIR$/astar/astar.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/experiments/run_experiments.py" beforeDir="false" afterPath="$PROJECT_DIR$/experiments/run_experiments.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +87,15 @@
       <option name="project" value="LOCAL" />
       <updated>1767542670061</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="improved A*">
+      <option name="closed" value="true" />
+      <created>1767545788789</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1767545788789</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -96,6 +105,18 @@
     <MESSAGE value="init" />
     <MESSAGE value="test" />
     <MESSAGE value="added and tested main logic" />
-    <option name="LAST_COMMIT_MESSAGE" value="added and tested main logic" />
+    <MESSAGE value="improved A*" />
+    <option name="LAST_COMMIT_MESSAGE" value="improved A*" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

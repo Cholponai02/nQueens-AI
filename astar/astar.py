@@ -6,7 +6,7 @@ class AStarSolver:
         self.heuristic = heuristic
 
     def is_goal(self, state):
-        return len(state) == self.n and self.heuristic(state) == 0
+        return len(state) == self.n
 
     def get_successors(self, state):
         successors = []
@@ -28,8 +28,8 @@ class AStarSolver:
 
     def solve(self):
         start = ()
-        frontier = []
-        heapq.heappush(frontier, (0, start))
+        initial_h = self.heuristic(start, self.n)
+        frontier = [(initial_h, start)]
         explored = set()
 
         nodes_expanded = 0
@@ -49,7 +49,7 @@ class AStarSolver:
             for succ in self.get_successors(state):
                 if succ not in explored:
                     g = len(succ)
-                    h = self.heuristic(succ)
+                    h = self.heuristic(succ, self.n)
                     heapq.heappush(frontier, (g + h, succ))
 
         return None, nodes_expanded

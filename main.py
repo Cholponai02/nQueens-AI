@@ -1,12 +1,12 @@
 from astar.astar import AStarSolver
-from astar.heuristics import conflicts_heuristic
+from astar.heuristics import nqueens_heuristic
 from csp.nqueens_csp import solve_nqueens_csp
 import time
 
 N = 8
 
 print("=== A* ===")
-astar = AStarSolver(N, conflicts_heuristic)
+astar = AStarSolver(N, nqueens_heuristic)
 start = time.time()
 solution, expanded = astar.solve()
 elapsed = time.time() - start
