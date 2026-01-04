@@ -51,5 +51,5 @@ def run_experiments(n_values, output_file="results.csv"):
 
 
 if __name__ == "__main__":
-    n_values = [4, 6, 8, 10]
+    n_values = [4, 6, 8, 10, 12, 14]
     run_experiments(n_values)

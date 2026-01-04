@@ -11,8 +11,19 @@ class AStarSolver:
     def get_successors(self, state):
         successors = []
         col = len(state)
+        if col >= self.n:
+            return []
+
         for row in range(self.n):
-            successors.append(state + (row,))
+            is_safe = True
+            for prev_col, prev_row in enumerate(state):
+                if prev_row == row or \
+                        abs(prev_row - row) == abs(prev_col - col):
+                    is_safe = False
+                    break
+
+            if is_safe:
+                successors.append(state + (row,))
         return successors
 
     def solve(self):
