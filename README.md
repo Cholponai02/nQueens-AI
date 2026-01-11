@@ -1,4 +1,4 @@
-# n-Queens: A* Search vs CSP
+# 👑n-Queens: A* Search vs CSP
 
 This project implements and compares two approaches for solving the **n-Queens problem**:
 
@@ -51,10 +51,18 @@ nQueens-AI/
 
 1. **Clone the repository:**
    ```bash
-   git clone [https://github.com//Cholponai02/nQueens-AI.git](https://github.com//Cholponai02/nQueens-AI.git)
+   git clone https://github.com/Cholponai02/nQueens-AI.git
    cd n-queens-ai
    ```
-2. **Install dependencies:**
+2. **Create a virtual environment:**
+   ```bash
+   py -m venv venv
+   ```
+3. **Activate the environment**
+   ```bash
+   .\venv\Scripts\Activate.ps1
+   ```
+4. **Install dependencies:**
    ```bash
    pip install -r requirements.txt
    ```
@@ -65,7 +73,7 @@ To run a sample comparison with visualization:
 ```bash
 python main.py
    ```
-To RUN PERFOMANCE EXPERIMENTS (main code):
+ 🏃 To RUN PERFOMANCE EXPERIMENTS (main code):
 ```bash
 python experiments/run_experiments.py
    ```
