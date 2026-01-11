@@ -75,5 +75,5 @@ python main.py
    ```
  🏃 To RUN PERFOMANCE EXPERIMENTS (main code):
 ```bash
-python experiments/run_experiments.py
+python -m experiments.run_experiments
    ```
