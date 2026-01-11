@@ -26,7 +26,7 @@ class AStarSolver:
                 successors.append(state + (row,))
         return successors
 
-    def solve(self):
+    def solve(self, callback=None):
         start = ()
         initial_h = self.heuristic(start, self.n)
         frontier = [(initial_h, start)]
@@ -42,6 +42,9 @@ class AStarSolver:
 
             explored.add(state)
             nodes_expanded += 1
+
+            if callback:
+                callback(state)
 
             if self.is_goal(state):
                 return state, nodes_expanded
